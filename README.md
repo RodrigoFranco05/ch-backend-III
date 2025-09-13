@@ -38,10 +38,7 @@ Comando para solo generar imagen del proyecto: docker build -t adoptme-api .
 ### Ejecutar Tests
 
 ```bash
-# Todos los tests
-npm test
-
-# Solo tests de adopciones
+# tests de adopciones
 npm run test:adoption
 ```
 
