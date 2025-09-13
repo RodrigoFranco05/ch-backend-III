@@ -1,0 +1,14 @@
+services:
+  adoptme-api:
+    build: .
+    image: rodrifranco05/coder-bd-iii-adoptme
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      MONGO_URI: "mongodb://db:27017/adoptme_db"
+  db:
+    image: mongo:5
+    restart: always
+    ports:
+      - "27017:27017"
